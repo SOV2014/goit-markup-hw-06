@@ -137,7 +137,7 @@ ol {
   background-size: cover;
 
   margin: 0 auto;
-  padding: 72px 52px 72px 52px;
+  padding: 72px 0;
 
 }
 
@@ -150,8 +150,9 @@ ol {
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
-  min-width: 160px;
-  margin-bottom: 72px;
+  max-width: 216px;
+
+  margin: 0 auto;
 }
 
 .box-button {
@@ -167,7 +168,8 @@ ol {
   height: 56px;
   border: none;
   border-radius: 4px;
-  margin: 0 auto;
+
+  margin: 72px auto 0 auto;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -179,14 +181,31 @@ ol {
 /* ===================Main================ */
 
 .advanteges {
-  padding: 120px 0;
+  padding: 96px 0;
 }
+
 
 .advanteges-list {
   background-color: #ffffff;
+  flex-direction: column;
   display: flex;
-  gap: 24px;
+  gap: 72x;
 }
+
+/* @media screen and (max-width: 767px) {
+  .advanteges-list {
+    background-color: #ffffff;
+    flex-direction: column;
+    display: flex;
+    gap: 72px;
+  }
+} */
+
+.advanteges-item-list {
+  width: 100%;
+}
+
+
 
 .wrap-item-title {
   display: flex;
@@ -199,21 +218,34 @@ ol {
   margin-bottom: 8px;
 }
 
+@media screen and (max-width: 1157px) {
+  .wrap-item-title {
+    display: none;
+  }
+
+}
+
 .advanteges-item-title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   color: #2e2f42;
   margin-bottom: 8px;
+
 }
 
 .advanteges-item-text {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  text-align: center;
+}
+
+.advanteges-item-list {
+  width: 100%;
 }
 
 .icon-main {}
@@ -225,9 +257,7 @@ ol {
   padding: 120px 0;
 }
 
-.advanteges-item-list {
-  width: calc((100% - 72px) / 4);
-}
+
 
 .team-title {
   font-weight: 700;
@@ -881,18 +911,34 @@ ol {
 
   /* ===========Hero============ */
   .box {
-    /* min-width: 768px; */
+    max-width: 768px;
   }
 
 
 
   .box-tekst {
     font-size: 56px;
-    /* line-height: 1.1;
-    letter-spacing: 0.02em; */
-    min-width: 496px;
-    margin-bottom: 36px;
+    max-width: 496px;
   }
+
+  .box-button {
+    margin: 36px auto 0 auto;
+  }
+
+  /* ============Main=========== */
+
+
+  .advanteges-list {
+    gap: 24px;
+    flex-direction: row;
+  }
+
+
+
+  .advanteges-item-list {
+    width: calc((100% - 24px) / 2);
+  }
+
 
 }
 
@@ -920,15 +966,37 @@ ol {
   }
 
   /* ===========Hero============ */
+  .advanteges {
+    padding: 120px 0;
+  }
 
   .box {
     min-width: 1158px;
-    padding: 188px 472px;
+    padding: 188px 0;
+
 
   }
 
-  .box-tekst {
-    flex-direction: column;
-    margin-bottom: 48px;
+  .box-button {
+    margin: 48px auto 0 auto;
   }
+}
+
+/* ============Main=========== */
+
+
+
+.advanteges-item-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+
+}
+
+.advanteges-item-text {
+  font-weight: 400;
+}
+
+.advanteges-item-list {
+  width: calc((100% - 24px * 3) / 4);
 }
