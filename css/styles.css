@@ -130,7 +130,7 @@ ol {
 /* ===============Hero================= */
 
 .box {
-  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people_office.jpg);
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../imagesX1X2/Dark-bg-tel-x1-min-min.jpg);
   max-width: 320px;
   background-repeat: no-repeat;
   background-position: center;
@@ -141,7 +141,12 @@ ol {
 
 }
 
-
+@media screen and (min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+  .box {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../imagesX1X2/Dark-bg-tel-x2-min-min.jpg);
+  }
+}
 
 .box-tekst {
   font-weight: 700;
@@ -270,11 +275,6 @@ ol {
 .team-list .team-item:first-child {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
-
-/* 
-.team-list .team-item {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-} */
 
 .team-item {
   background-color: #ffffff;
@@ -923,8 +923,16 @@ ol {
   /* ===========Hero============ */
   .box {
     max-width: 768px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../imagesX1X2/Dark-bg-tab-x1-min-min.jpg);
   }
 
+  @media screen and (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .box {
+      max-width: 768px;
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../imagesX1X2/Dark-bg-tab-x2-min-min.jpg);
+    }
+  }
 
 
   .box-tekst {
@@ -998,7 +1006,6 @@ ol {
 
     gap: 24px;
     flex-direction: row;
-
     flex-wrap: wrap;
   }
 
@@ -1056,10 +1063,16 @@ ol {
   }
 
   .box {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../imagesX1X2/Dark-bg-main-x1-min.jpg);
     max-width: 1158px;
     padding: 188px 0;
+  }
 
-
+  @media screen and (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .box {
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../imagesX1X2/Dark-bg-main-x2-min-min.jpg);
+    }
   }
 
   .box-button {
@@ -1114,6 +1127,7 @@ ol {
 
   /* ==============Footer================= */
   .footer-blok {
+
     padding-top: 100px;
     padding-bottom: 100px;
   }
@@ -1156,5 +1170,118 @@ ol {
     letter-spacing: 0.02em;
     color: #f4f4fd;
     max-width: 264px;
+  }
+
+
+  /* === */
+  .footer-social-media {}
+
+  .footer-social-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+  }
+
+  .footer-item-list {
+    display: flex;
+    gap: 16px;
+  }
+
+  .footer-item-link {
+    width: 40px;
+    height: 40px;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+
+  .footer-item-link-image {
+
+    fill: var(--icon-color);
+  }
+
+  .footer-team-link {
+    width: 100%;
+    height: 100%;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-team-link {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .footer-team-link:hover,
+  .footer-team-link:focus {
+    background-color: #31d0aa;
+  }
+
+
+  .email-input {
+    margin-left: auto;
+  }
+
+  .email-input-subscribe {
+    margin-bottom: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+  }
+
+  .email-input-text {
+    display: flex;
+    gap: 24px;
+  }
+
+  .email-input-input {
+    width: 264px;
+    height: 40px;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    padding-left: 16px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    color: #ffffff;
+  }
+
+  .email-input-input::placeholder {
+    color: #ffffff;
+  }
+
+  .email-input-button {
+    font-weight: 500;
+    min-width: 165px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    cursor: pointer;
+    background-color: #4D5AE5;
+    border: none;
+    border-radius: 4px;
+
+  }
+
+  .input-button-image {
+    margin-left: 16px;
+    fill: #ffffff;
+    border: none;
   }
 }
