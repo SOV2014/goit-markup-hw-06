@@ -29,7 +29,7 @@ a {
 /* Властивості для коректного відображення картинок */
 img {
   display: block;
-  width: 100%;
+  width: 264px;
   height: auto;
 }
 
@@ -131,7 +131,7 @@ ol {
 
 .mobile-menu {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   padding-top: 72px;
   padding-bottom: 40px;
   display: flex;
@@ -374,8 +374,10 @@ ol {
   margin-bottom: 72px;
 }
 
+/* ==qqqqqqqqqqqqq */
 .team-list {
   display: flex;
+  align-items: center;
   flex-direction: column;
   gap: 72px;
 }
@@ -386,7 +388,7 @@ ol {
 
 .team-item {
   background-color: #ffffff;
-  width: 100%;
+  width: 264px;
 }
 
 /* ========card-item========= */
@@ -905,10 +907,6 @@ ol {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
-  display: flex;
-  align-items: center;
-
-
 }
 
 .user-check-box {
@@ -1066,7 +1064,7 @@ ol {
 
 
   .advanteges-list {
-    gap: 24px;
+    gap: 72px 24px;
     flex-direction: row;
     flex-wrap: wrap;
   }
@@ -1083,22 +1081,21 @@ ol {
 
   /* ===========Team=========== */
   .team {
-    padding: 96px 108px;
+    padding: 96px 0;
   }
 
   .team-list {
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 24px;
-
-
+    gap: 72px 24px;
+    justify-content: center;
   }
 
   .team-item {
-    width: calc((100% - 24px) / 2);
+    width: 264px;
     background-color: #ffffff;
     border-radius: 0px 0px 4px 4px;
-    margin-bottom: 64px;
+    /* margin-bottom: 64px; */
   }
 
   /* ============Portfolio=========== */
@@ -1123,7 +1120,7 @@ ol {
 
   .footer-container-blok {
 
-    gap: 24px;
+    gap: 72px 24px;
     flex-direction: row;
     flex-wrap: wrap;
   }
@@ -1183,7 +1180,7 @@ ol {
 
   .box {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../imagesX1X2/Dark-bg-main-x1-min.jpg);
-    max-width: 1158px;
+    max-width: 1440px;
     padding: 188px 0;
   }
 
@@ -1265,7 +1262,7 @@ ol {
   }
 
   .footer-container {
-    /* margin-right: 120px; */
+    margin-right: 120px;
 
   }
 
@@ -1305,6 +1302,7 @@ ol {
 
   .footer-social-media {
     margin-bottom: 0;
+    margin-right: auto;
   }
 
 }
