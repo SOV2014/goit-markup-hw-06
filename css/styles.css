@@ -29,7 +29,7 @@ a {
 /* Властивості для коректного відображення картинок */
 img {
   display: block;
-  width: 264px;
+  width: 100%;
   height: auto;
 }
 
@@ -1110,10 +1110,7 @@ ol {
   }
 
 
-  .portfolio-item-image {
-    width: 356px;
-    height: 420px;
-  }
+
 
   /* ============Footer============== */
   .footer-blok .container {
@@ -1266,7 +1263,7 @@ ol {
     display: flex;
     align-items: baseline;
     flex-wrap: nowrap;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     /* gap: 72px; */
   }
 
