@@ -450,6 +450,8 @@ ol {
 
 .team-item-link-image {
   fill: #f4f4fd;
+  width: 100%;
+  height: 100%;
 }
 
 /* ===========Portfolio============= */
@@ -477,6 +479,7 @@ ol {
 
 .portfolio-item {
   width: 100%;
+  height: 100%;
 
 }
 
@@ -498,12 +501,15 @@ ol {
 }
 
 .portfolio-item-image {
+  /* width: 100%;
+  height: 100%; */
   position: relative;
   overflow: hidden;
 }
 
 .portfolio-down-text {
-
+  width: 100%;
+  height: 100%;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -514,7 +520,6 @@ ol {
   padding: 40px 32px;
   background-color: #4d5ae5;
   mobile-menu height: 100%;
-  width: 100%;
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -598,7 +603,7 @@ ol {
 
 .footer-social-media {
   display: block;
-  margin-bottom: 72px;
+  /* margin-bottom: 72px; */
   text-align: center;
   align-self: center;
 }
@@ -1102,8 +1107,12 @@ ol {
 
   .portfolio-item {
     width: calc((100% - 24px) / 2);
+  }
 
 
+  .portfolio-item-image {
+    width: 356px;
+    height: 420px;
   }
 
   /* ============Footer============== */
