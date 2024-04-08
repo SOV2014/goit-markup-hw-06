@@ -450,7 +450,7 @@ ol {
 
 .team-item-link-image {
   fill: #f4f4fd;
- 
+
 }
 
 /* ===========Portfolio============= */
@@ -661,7 +661,9 @@ ol {
 
 .email-input {
   /* margin-left: auto; */
-  margin: 0 auto;
+  /* margin: 0 auto; */
+  margin-top: 72px;
+
 }
 
 .email-input-subscribe {
@@ -680,7 +682,7 @@ ol {
 }
 
 .email-input-input {
-  width: 264px;
+  width: 288px;
   height: 40px;
   border: 1px solid #ffffff;
   background-color: transparent;
